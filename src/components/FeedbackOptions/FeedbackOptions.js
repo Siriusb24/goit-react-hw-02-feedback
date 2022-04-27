@@ -5,7 +5,7 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
   //console.log(Object.keys(options))
   return (
     <ul className={s.list}>
-      {Object.keys(options).map(button => {
+      {options.map(button => {
         return (
           <li key={button} className={s.item}>
             <button
